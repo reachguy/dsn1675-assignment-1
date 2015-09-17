@@ -4,7 +4,6 @@
 
 html {
   color: black;
-  background-color: lightgrey;
   margin: 0em;
 }
 
@@ -22,6 +21,11 @@ header h1 {
   display: inline-block;
   margin: 0px;
   position: relative;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0;
 }
 
 .button {
@@ -29,7 +33,7 @@ header h1 {
   padding: 0px 0px 0px 5px;
 }
 
-nav ul li {
+nav ol li {
   display: inline-block;
 }
 
@@ -38,16 +42,26 @@ nav ul li {
 }
 
 .top img {
-  width: 115%;
+  width: 100%;
   margin: 0 -10%;
+  position: relative;
 }
 
-.top h2, p {
-  position: relative;
+.top h2 {
+  position: absolute;
   color: #fff;
-  top: -8rem;
+  top: 13rem;
   width: 100%;
   text-align: center;
+}
+
+.top p {
+  position: absolute;
+  color: #fff;
+  top: 15rem;
+  width: 100%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 
 .top {
@@ -56,6 +70,7 @@ nav ul li {
 
 h2 {
   text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 
 main img {
@@ -75,3 +90,29 @@ main img {
   margin: 0;
 }
 
+.buy p {
+  text-align: center;
+  padding: 0 5em;
+  font-family: 'Lato', sans-serif;
+}
+
+.price {
+  width: 100%;
+  text-align: center;
+}
+
+.price div {
+  background-color: #666;
+  padding: 1em 1em;
+  width: 40%;
+  display: inline-block;
+  border-radius: 0.25em;
+}
+
+.price a {
+  color: #fff;
+}
+
+#buy-tickets {
+  background-color: gainsboro;
+}
