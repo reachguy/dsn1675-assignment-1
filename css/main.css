@@ -1,0 +1,77 @@
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+html {
+  color: black;
+  background-color: lightgrey;
+  margin: 0em;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  display: inline-block;
+  margin-right: 1em;
+  width: 50px;
+}
+
+header h1 {
+  display: inline-block;
+  margin: 0px;
+  position: relative;
+}
+
+.button {
+  display: inline-block;
+  padding: 0px 0px 0px 5px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+.top {
+  text-align: center;
+}
+
+.top img {
+  width: 115%;
+  margin: 0 -10%;
+}
+
+.top h2, p {
+  position: relative;
+  color: #fff;
+  top: -8rem;
+  width: 100%;
+  text-align: center;
+}
+
+.top {
+  margin-bottom: -5rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+main img {
+  width: 100%;
+}
+
+.desc li {
+  display: inline-block;
+  width: 32%;
+}
+
+.desc dt {
+  font-weight: bold;
+}
+
+.desc dd, .desc dl {
+  margin: 0;
+}
+
