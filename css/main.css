@@ -65,105 +65,279 @@ h1 {
   margin: .5em;
 }
 
+nav {
+  clear: left;
+  display: block;
+}
 
-
-
-
-
-
-
-
-
-
-body {
+nav ol {
   margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-.button {
-  display: inline-block;
-  padding: 0px 0px 0px 5px;
+nav li {
+  background: lightblue;
+  width: 25%;
+  text-align: center;
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  font-size: .8em;
+  padding: 0.5em 0;
 }
 
-nav ol li {
-  display: inline-block;
+nav li:hover {
+  background: #FFF;
 }
+
+
+
+
+
+/*header*/
 
 .top {
-  text-align: center;
+  background-color: blue;
+  margin: 0;
+  padding: 0;
+  display: block;
+  clear: both;
 }
 
-.top img {
-  width: 100%;
-  margin: 0 -10%;
+figure {
+  display: block;
+  padding: 0;
+  margin: 0;
   position: relative;
 }
 
-.top h2 {
+img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+figcaption {
   position: absolute;
-  color: #fff;
-  top: 13rem;
-  width: 100%;
+  bottom: 0;
+  left: 10%;
+  background: rgba(225, 225, 225, 0.6);
+  width: 80%;
+  padding: 0 1em 1em;
   text-align: center;
+  border-radius: 10px 10px 0 0;
+  color: #000;
+  line-height: 1em;
 }
 
-.top p {
-  position: absolute;
-  color: #fff;
-  top: 15rem;
-  width: 100%;
-  text-align: center;
-  font-family: 'Lato', sans-serif;
+figcaption h2 {
+  padding: 0.5em 0 0 0;
+  margin: 0;
+  font-size: 1em;
+  line-height: 1em;
 }
 
-.top {
-  margin-bottom: -5rem;
-}
-
-h2 {
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-}
-
-main img {
-  width: 100%;
-}
-
-.desc li {
-  display: inline-block;
-  width: 32%;
-}
-
-.desc dt {
-  font-weight: bold;
-}
-
-.desc dd, .desc dl {
+figcaption p {
+  font-size: .8em;
+  padding: 0;
   margin: 0;
 }
 
-.buy p {
-  text-align: center;
-  padding: 0 5em;
-  font-family: 'Lato', sans-serif;
-}
+/* Seven Wonders */
 
-.price {
+.main img, .playing img {
+  margin: 0;
+  padding: 1em 1em 0;
+  display: block;
   width: 100%;
+}
+
+.main h2 {
+  color: green;
+  background-color: blue;
+  margin: 0;
+  padding: .5em;
   text-align: center;
 }
 
-.price div {
-  background-color: #666;
-  padding: 1em 1em;
-  width: 40%;
+.main p {
+  clear: left;
+  max-width: 280px;
+  text-align:center;
+  border-radius: 10px;
+  background-color: lightgrey;
+  margin: 1em;
+  float: left;
+  padding: .5em;
+}
+
+.main p:hover, nav li:hover {
+    background-color: grey;
+}
+
+.subheader {
+  padding: 0;
+}
+
+.main dl{
+  padding: 0;
+  margin: 10px 1em;
   display: inline-block;
-  border-radius: 0.25em;
 }
 
-.price a {
-  color: #fff;
+dt {
+  padding: 0;
+  margin: 0;
+  clear: left;
+  font-weight: bold;
 }
 
-#buy-tickets {
-  background-color: gainsboro;
+dd {
+  margin: 0;
+  padding-left: 0.5em;
+}
+
+/* Buy */
+
+.buy {
+  margin: 0;
+  text-align: center;
+  background-color: lightgrey;
+  clear: left;
+  overflow: hidden;
+  display: block;
+}
+
+.buy p {
+  padding: 1em;
+}
+
+.buy h2 {
+  text-align: center;
+  clear: both;
+  background-color: beige;
+  margin: 0;
+  padding: .5em;
+}
+
+.buy ul {
+  display: block;
+  margin: 0 auto 2em;
+  width: 70%;
+  overflow: hidden;
+}
+
+.buy li {
+  float: left;
+  list-style-type: none;
+  background-color: white;
+  border-radius: 20px;
+  width: 48%;
+  padding: 1em;
+  margin: 0 1%;
+}
+
+.buy li:hover {
+  background-color: grey;
+}
+
+/* Playing */
+
+.playing {
+  padding: 0;
+  margin: 0;
+}
+
+.playing img {
+  width: 100%;
+  padding: 0;
+}
+
+.playing figure {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.playing figcaption {
+  position: absolute;
+  bottom: 0;
+  padding: 1em;
+}
+
+.playing h2 {
+  text-align: center;
+  background-color: lightblue;
+}
+
+.playing a {
+  text-transform: uppercase;
+}
+
+.playing a:hover {
+  color: green;
+  font-weight: bold;
+}
+
+.this-week {
+  padding: 0 1em;
+}
+
+.this-week dd:nth-of-type(even){
+  padding-bottom: 1em;
+  padding-top: .5em;
+}
+
+.this-week dd:nth-of-type(odd) {
+  padding-top: .5em;
+}
+
+.this-week dt, .this-week dd {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.this-week dt {
+  width: 100%;
+  border-top: 1px solid blue;
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: lightgreen;
+}
+
+.this-week h2 {
+  clear: left;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+}
+
+/* footer */
+
+footer {
+  padding: .5em 1em;
+  background-color: lightgrey;
+  clear: both;
+}
+
+footer ol {
+  display: list-item;
+  list-style-type: none;
+  padding: 0;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.address {
+  padding: 1em 0;
+  font-weight: bold;
+  color: blue;
 }
