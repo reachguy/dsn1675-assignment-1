@@ -1,14 +1,35 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 *, *::before, *::after{
   box-sizing: inherit;
 }
 
 html {
   box-sizing: border-box;
+  font-size: 100%;
+  line-height: 1.3;
 }
 
 header {
   text-align: center;
-  margin-top: 5px;
+  margin: 0;
+  background-color: darkgrey;
 }
 
 .logo {
@@ -17,8 +38,17 @@ header {
   margin-top: 10px;
 }
 
+.button a {
+  text-decoration: none;
+  border-radius: 2px;
+  color: black;
+}
+
 .button {
   display: inline-block;
+  text-decoration: none;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -27,7 +57,7 @@ h1 {
   max-width: 33.3%;
   font-size: 1rem;
   margin: .5em;
-  line-height: 1em;
+  line-height: 0.9em;
 }
 
 nav {
@@ -50,11 +80,21 @@ nav li {
   margin: 0;
   font-size: .8em;
   padding: 0.5em 0;
-  color: white;
+  color: #fff;
 }
 
 nav li:hover {
-  background: #FFF;
+  background: #fff;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav li a:hover {
+  color: #fff;
 }
 
 body {
@@ -94,9 +134,12 @@ img {
 .top h2 {
   bottom: 0;
   width: 80%;
-  padding: 0 1em 1em;
-  color: #fff;
+  padding: 0 0 0 0.3em;
+  color: white;
   line-height: 1em;
+  font-size: 3em;
+  font-family: 'Sansita One', cursive;
+  margin-bottom: 0;
 }
 
 .top p {
@@ -116,26 +159,45 @@ img {
 }
 
 .main h2 {
-  color: green;
-  background-color: blue;
+  color: white;
+  background-color: darkolivegreen;
   margin: 0;
   padding: .5em;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
+.main h3 {
+  color: white;
+  background-color: darkolivegreen;
+  margin: 0 16px;
+  padding: .5em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
 .main p {
-  clear: left;
   max-width: 280px;
-  text-align:center;
+  text-align: center;
   border-radius: 10px;
   background-color: lightgrey;
   margin: 1em;
-  float: left;
+  font-family: 'Montserrat', sans-serif;
   padding: .5em;
+  margin-bottom: 2em;
 }
 
-.main p:hover, nav li:hover {
-    background-color: yellow;
+.main p a {
+  color: black;
+}
+
+.main p:hover, .main p a:hover {
+    background-color: darkolivegreen;
+    color: white;
+}
+
+nav li:hover {
+  background-color: black;
 }
 
 .subheader {
@@ -146,20 +208,17 @@ img {
 .main dl{
   padding: 0;
   margin: 10px 1em;
-  display: inline-block;
 }
 
 dt {
   padding: 0;
   margin: 0;
-  clear: left;
   font-weight: bold;
 }
 
 dd {
   margin: 0;
   padding-left: 0.5em;
-
 }
 
 /* Buy */
@@ -167,7 +226,6 @@ dd {
 .buy {
   margin: 0;
   text-align: center;
-  background-color: lightgreen;
   clear: left;
   overflow: hidden;
   display: block;
@@ -180,8 +238,9 @@ dd {
 .buy h2 {
   text-align: center;
   clear: both;
-  background-color: darkgreen;
-  margin: 0;
+  background-color: darkolivegreen;
+  margin: 1.5em 0;
+  font-family: 'Montserrat', sans-serif;
   padding: .5em;
   color: white;
 }
@@ -191,20 +250,35 @@ dd {
   margin: 0 auto 2em;
   width: 70%;
   overflow: hidden;
+  padding: 0;
 }
 
 .buy li {
   float: left;
   list-style-type: none;
-  background-color: white;
+  background-color: grey;
   border-radius: 20px;
   width: 48%;
-  padding: 1em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.5em;
   margin: 0 1%;
 }
 
+.buy a {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
 .buy li:hover {
-  background-color: green;
+  background-color: black;
+  text-decoration-color: white;
+}
+
+.buy li a:hover {
+  color: white
 }
 
 /* Playing */
@@ -229,50 +303,56 @@ dd {
   position: absolute;
   bottom: 0;
   padding: 1em;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .playing h2 {
   text-align: center;
-  background-color: lightblue;
+  background-color: darkolivegreen;
+  color: white;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .playing a {
   text-transform: uppercase;
+  color: white;
 }
 
 .playing a:hover {
-  color: green;
+  color: blue;
   font-weight: bold;
 }
 
 .this-week {
   padding: 0 1em;
-}
-
-.this-week dd:nth-of-type(even){
-  padding-bottom: 1em;
-  padding-top: .5em;
-}
-
-.this-week dd:nth-of-type(odd) {
-  padding-top: .5em;
-}
-
-.this-week dt, .this-week dd {
-  padding: 0;
   margin: 0;
-  width: 100%;
+}
+
+.this-week dd strong {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.this-week dd {
+  padding: 10px 0 15px 0;
 }
 
 .this-week dt {
   width: 100%;
   border-top: 1px solid blue;
-  margin-top: 0;
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.2em;
-  background-color: lightgreen;
+  background-color: darkolivegreen;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
 .this-week h2 {
@@ -288,6 +368,7 @@ footer {
   padding: .5em 1em;
   background-color: lightgrey;
   clear: both;
+  font-family: 'Montserrat', sans-serif;
 }
 
 footer ol {
@@ -306,12 +387,126 @@ footer a:hover {
   color: blue;
 }
 
-@media only screen and (min-width: 31em) {
+@media only screen and (min-width: 28em) {
 
-  html {
-  background-color: lightcyan;
+  nav li {
+  background: darkolivegreen;
+  width: 25%;
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  font-size: .8em;
+  padding: 0.5em 0;
+  padding-left: 0.5em;
+  color: #fff;
 }
 
+h1 {
+  display: inline-block;
+  font-family: 'Scheherazade', serif;
+  max-width: 50%;
+  font-size: 1.2rem;
+  margin: .5em;
+  vertical-align: middle;
+  line-height: 0.9em;
+}
 
+h3 {
+  text-align: center;
+}
 
+dl {
+  text-align: center;
+}
+
+dl dd {
+  padding: 0;
+}
+
+dl div {
+  width: 30%;
+  display: inline-block;
+}
+
+.main p {
+  margin: auto;
+}
+
+}
+
+@media only screen and (min-width: 40em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .left {
+    width: 48%;
+    float: left;
+    clear: left;
+  }
+
+  .right {
+    width: 48%;
+    float: right;
+    clear: right;
+  }
+
+}
+
+@media only screen and (min-width: 50em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  header {
+    float: left;
+    width: 100%;
+  }
+
+  nav li {
+  background: darkolivegreen;
+  width: 100%;
+  text-align: center;
+  clear: left;
+  list-style-type: none;
+  margin: 0;
+  font-size: .8em;
+  padding: 0.5em 0;
+  color: #fff;
+  }
+
+  .banner {
+    width: 30%;
+    float: left;
+    position: fixed;
+  }
+
+  .everything {
+    width: 70%;
+    float: right;
+  }
+
+}
+
+@media only screen and (min-width: 70em) {
+
+  .wrapper {
+    max-width: 40em;
+    margin: 0 auto;
+  }
+}
+
+@media print {
+  header {
+    display: none;
+
+  }
+  nav {
+    display: none;
+  }
 }
