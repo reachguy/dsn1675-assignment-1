@@ -534,9 +534,10 @@ dl div {
   a {
     display: none;
   }
-
-  .everything {
-    width: 45%;
+/*
+  .thing {
+    page-break-before: always;
   }
+*/
 
 }
