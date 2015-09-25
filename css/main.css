@@ -170,7 +170,7 @@ img {
 .main h3 {
   color: white;
   background-color: darkolivegreen;
-  margin: 0 16px;
+  margin: 0 1rem;
   padding: .5em;
   font-family: 'Montserrat', sans-serif;
 }
@@ -442,6 +442,12 @@ dl div {
     line-height: 1.4;
   }
 
+    dl div {
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+
   .left {
     width: 48%;
     float: left;
@@ -462,6 +468,8 @@ dl div {
     font-size: 120%;
     line-height: 1.5;
   }
+
+
 
   header {
     float: left;
@@ -493,10 +501,10 @@ dl div {
 
 }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 60em) {
 
   .wrapper {
-    max-width: 40em;
+    max-width: 60em;
     margin: 0 auto;
   }
 }
@@ -504,9 +512,31 @@ dl div {
 @media print {
   header {
     display: none;
-
   }
+
   nav {
     display: none;
   }
+
+  .left {
+    width: 45%;
+    float: left;
+  }
+
+  .right {
+    width: 45%;
+    float: right;
+  }
+  .top {
+    display: none;
+  }
+
+  a {
+    display: none;
+  }
+
+  .everything {
+    width: 45%;
+  }
+
 }
